@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <span>Cadastro de Motoristas</span>
+            <i onclick="openModal()" id="new">Incluir</i></button> 
+        </div>
+        
+
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="m-nome">Nome</label>
+                    <input type="text" id="m-nome" placeholder="Nome do motorista" required>
+
+                    <label for="m-cpf">CPF</label>
+                    <input type="text" id="m-cpf" placeholder="CPF do motorista" required>
+
+                    <label for="m-telefone">Telefone</label>
+                    <input type="text" id="m-telefone" placeholder="Telefone do motorista" required>
+                
+                    <button id="btnSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+
+</body>
+</html>
